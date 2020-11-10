@@ -8,9 +8,9 @@ public class BotValidator {
     public static void main(String[] args) {
         ApiContextInitializer.init();
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-        try{
+        try {
             telegramBotsApi.registerBot(new ToDoBot());
-        }catch (TelegramApiRequestException e){
+        } catch (TelegramApiRequestException e) {
             e.printStackTrace();
         }
     }
